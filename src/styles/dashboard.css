@@ -1,0 +1,35 @@
+.blue-dark-text {
+  color: var(--veryDarkBlue);
+}
+
+.gray-blue-text {
+  color: var(--darkGrayishBlue);
+}
+
+.blue-text {
+  color: var(--desaturatedBlue);
+}
+
+.lime-text {
+  color: var(--limeGreen);
+}
+
+.red-text {
+  color: var(--brightRed);
+}
+
+.light-card-bg {
+  background-color: var(--lightGrayishBlue);
+}
+
+.light-top-bg {
+  background-color: var(--veryPaleBlue);
+}
+
+.dark-card-bg {
+  background-color: var(--darkDesaturatedBlue);
+}
+
+.dark-top-bg {
+  background-color: var(--veryDarkBlueTopBG);
+}
