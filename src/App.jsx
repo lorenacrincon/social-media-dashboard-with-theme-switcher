@@ -11,7 +11,7 @@ function App() {
     <>
       <section className="dark:bg-slate-900 p-8 h-full lg:h-screen">
         <div
-          className="bg-slate-400 dark:bg-slate-800 h-52 w-full absolute top-0 left-0 rounded-b-3xl"
+          className="bg-slate-400 dark:bg-slate-800 h-72 w-full absolute top-0 left-0 rounded-b-3xl"
           style={{
             zIndex: 0,
           }}

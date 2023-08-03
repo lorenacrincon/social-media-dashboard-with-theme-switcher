@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/lorenacrincon/social-media-dashboard-with-theme-switcher)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Click here!](https://lorenacrincon.github.io/social-media-dashboard-with-theme-switcher/)
 
 ## My process
 
@@ -57,18 +57,60 @@ Users should be able to:
 In this challenge, I learned how to customize classes in Tailwind from the tailwind.config.js file. I understood how Tailwind's dark mode works and practiced grid layout.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<article
+  className="light-card-bg dark:bg-slate-700 p-7 rounded-md shadow-slate-50 border-t-6 border-blue-500 hover:brightness-125"
+>
+  <ul className="flex items-center justify-center text-center gap-2">
+    <li>
+      <img src="{facebook}" alt="Facebook icon" />
+    </li>
+    <li className="font-bold gray-blue-text dark:text-slate-400">@nathanf</li>
+  </ul>
+  <h2
+    className="blue-dark-text dark:text-white font-bold text-6xl text-center my-5"
+  >
+    1987{" "}
+    <span
+      className="tracking-widest gray-blue-text  text-sm block font-normal dark:text-slate-400"
+    >
+      FOLLOWERS
+    </span>
+  </h2>
+
+  <p
+    className="lime-text font-bold text-md text-center flex items-center justify-center"
+  >
+    <img className="mr-2 w-3" src="{up}" alt="Icon up" />
+    12 today
+  </p>
+</article>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.checkbox:checked + .label .ball {
+  transform: translateX(-25px);
+}
+
+.checkbox:checked + .label {
+  background: linear-gradient(120deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
+const [darkMode, setDarkMode] = useState(true); // Cambio a true
+
+useEffect(() => {
+  const body = document.querySelector("body");
+
+  if (darkMode) {
+    body.classList.add("dark");
+  } else {
+    body.classList.remove("dark");
+  }
+}, [darkMode]);
+
+const toggleTheme = () => {
+  setDarkMode(!darkMode);
 };
 ```
 

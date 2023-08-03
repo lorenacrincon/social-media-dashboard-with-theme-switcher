@@ -9,11 +9,11 @@ import down from "../assets/images/icon-down.svg";
 function Overview() {
   return (
     <>
-      <h2 className="font-bold gray-blue-text text-2xl dark:text-white max-w-7xl mx-auto">
+      <h2 className="font-bold gray-blue-text text-2xl dark:text-white max-w-7xl mx-auto pt-7">
         Overview - Today
       </h2>
-      <section className="py-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-        <article className="light-card-bg dark:bg-slate-700 p-5 rounded-md shadow-slate-50 hover:brightness-125">
+      <section className="py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <article className="light-card-bg dark:bg-slate-700 p-8 rounded-md shadow-slate-50 hover:brightness-125">
           <ul className="flex justify-between mb-10">
             <li className="font-bold gray-blue-text dark:text-slate-400">
               Page Views
@@ -32,7 +32,7 @@ function Overview() {
             </li>
           </ul>
         </article>
-        <article className="light-card-bg p-5 rounded-md shadow-slate-50 dark:bg-slate-700 hover:brightness-125">
+        <article className="light-card-bg p-8 rounded-md shadow-slate-50 dark:bg-slate-700 hover:brightness-125">
           <ul className="flex justify-between mb-10">
             <li className="font-bold gray-blue-text dark:text-slate-400">
               Likes
@@ -51,7 +51,7 @@ function Overview() {
             </li>
           </ul>
         </article>
-        <article className="light-card-bg p-5 rounded-md shadow-slate-50 dark:bg-slate-700 hover:brightness-125">
+        <article className="light-card-bg p-8 rounded-md shadow-slate-50 dark:bg-slate-700 hover:brightness-125">
           <ul className="flex justify-between mb-10">
             <li className="font-bold gray-blue-text dark:text-slate-400">
               Likes
@@ -70,7 +70,7 @@ function Overview() {
             </li>
           </ul>
         </article>
-        <article className="light-card-bg p-5 rounded-md shadow-slate-50 dark:bg-slate-700 hover:brightness-125">
+        <article className="light-card-bg p-8 rounded-md shadow-slate-50 dark:bg-slate-700 hover:brightness-125">
           <ul className="flex justify-between mb-10">
             <li className="font-bold gray-blue-text dark:text-slate-400">
               Profile Views
@@ -89,7 +89,7 @@ function Overview() {
             </li>
           </ul>
         </article>
-        <article className="light-card-bg p-5 rounded-md shadow-slate-50 dark:bg-slate-700 hover:brightness-125">
+        <article className="light-card-bg p-8 rounded-md shadow-slate-50 dark:bg-slate-700 hover:brightness-125">
           <ul className="flex justify-between mb-10">
             <li className="font-bold gray-blue-text dark:text-slate-400">
               Retweets
@@ -108,7 +108,7 @@ function Overview() {
             </li>
           </ul>
         </article>
-        <article className="light-card-bg p-5 rounded-md shadow-slate-50 dark:bg-slate-700 hover:brightness-125">
+        <article className="light-card-bg p-8 rounded-md shadow-slate-50 dark:bg-slate-700 hover:brightness-125">
           <ul className="flex justify-between mb-10">
             <li className="font-bold gray-blue-text dark:text-slate-400">
               Likes
@@ -127,7 +127,7 @@ function Overview() {
             </li>
           </ul>
         </article>
-        <article className="light-card-bg p-5 rounded-md shadow-slate-50 dark:bg-slate-700 hover:brightness-125">
+        <article className="light-card-bg p-8 rounded-md shadow-slate-50 dark:bg-slate-700 hover:brightness-125">
           <ul className="flex justify-between mb-10">
             <li className="font-bold gray-blue-text dark:text-slate-400">
               Likes
@@ -146,7 +146,7 @@ function Overview() {
             </li>
           </ul>
         </article>
-        <article className="light-card-bg p-5 rounded-md shadow-slate-50 dark:bg-slate-700 hover:brightness-125">
+        <article className="light-card-bg p-8 rounded-md shadow-slate-50 dark:bg-slate-700 hover:brightness-125">
           <ul className="flex justify-between mb-10">
             <li className="font-bold gray-blue-text dark:text-slate-400">
               Total Views
