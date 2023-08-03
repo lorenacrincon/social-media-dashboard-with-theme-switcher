@@ -33,3 +33,8 @@
 .dark-top-bg {
   background-color: var(--veryDarkBlueTopBG);
 }
+
+.instagram {
+  background: var(--instagram);
+  height: 5.5px;
+}

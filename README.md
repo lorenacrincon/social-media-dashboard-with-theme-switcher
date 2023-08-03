@@ -24,9 +24,15 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Toggle color theme to their preference
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+## Dark Mode
+
+![](./src/assets/images/Screenshot-dark.png)
+
+## Light Mode
+
+![](./src/assets/images/Screenshot-light.png)
 
 ### Links
 

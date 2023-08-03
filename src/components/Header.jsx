@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function Header() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false); // Cambio a true
 
-  const toggleTheme = () => {
+  useEffect(() => {
     const body = document.querySelector("body");
 
     if (darkMode) {
@@ -11,39 +11,47 @@ function Header() {
     } else {
       body.classList.remove("dark");
     }
+  }, [darkMode]);
 
+  const toggleTheme = () => {
     setDarkMode(!darkMode);
   };
 
   return (
-    <header className="flex items-center justify-between">
-      <div>
-        <h1 className="font-bold text-2xl blue-dark-text">
-          Social Media Dashboard
-        </h1>
-        <p className="font-bold text-sm gray-blue-text">
-          Total Followers: 23,004
-        </p>
-      </div>
-      <div className="toggle">
-        <label
-          className="font-bold gray-blue-text text-sm cursor-pointer"
-          htmlFor="checkbox"
-        >
-          Dark mode
-        </label>
-        <input
-          type="checkbox"
-          className="checkbox"
-          id="checkbox"
-          checked={!darkMode}
-          onChange={toggleTheme}
-        />
-        <label htmlFor="checkbox" className="label">
-          <div className="ball"></div>
-        </label>
-      </div>
-    </header>
+    <>
+      <header className="flex items-center justify-between relative z-10 max-w-7xl mx-auto flex-wrap lg:flex-nowrap gap-6 ">
+        <div>
+          <h1 className="font-bold text-2xl blue-dark-text dark:text-white">
+            Social Media Dashboard
+          </h1>
+          <p className="font-bold text-sm gray-blue-text dark:text-slate-400">
+            Total Followers: 23,004
+          </p>
+        </div>
+        <div className="flex gap-3">
+          <div>
+            <label
+              className="font-bold light-toggle-text text-sm cursor-pointer dark:text-white self-center"
+              htmlFor="checkbox"
+            >
+              Dark mode
+            </label>
+          </div>
+          <div className="">
+            <input
+              type="checkbox"
+              className="checkbox"
+              id="checkbox"
+              checked={darkMode}
+              onChange={toggleTheme}
+            />
+            <label htmlFor="checkbox" className="label flex items-center">
+              <div className="ball"></div>
+            </label>
+          </div>
+        </div>
+      </header>
+    </>
   );
 }
 
