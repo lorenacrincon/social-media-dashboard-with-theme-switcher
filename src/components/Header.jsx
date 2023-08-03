@@ -5,12 +5,7 @@ function Header() {
 
   useEffect(() => {
     const body = document.querySelector("body");
-
-    if (darkMode) {
-      body.classList.add("dark");
-    } else {
-      body.classList.remove("dark");
-    }
+    body.classList.toggle("dark", darkMode);
   }, [darkMode]);
 
   const toggleTheme = () => {
